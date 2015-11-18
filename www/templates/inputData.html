@@ -1,0 +1,25 @@
+<ion-view title="Input Data Test">
+    <ion-content padding="true" class="has-header">
+      <form>
+          <ion-list>
+              <label class="item item-input">
+                  <span class="input-label">Average Shots</span>
+                  <input type="number" placeholder="enter average shots..." ng-model="data.shots">
+              </label>
+              <label class="item item-input">
+                  <span class="input-label">Average Time</span>
+                  <input type="number" placeholder="enter your time..." ng-model="data.time">
+              </label>
+              <label class="item item-input">
+                  <span class="input-label">Forehand Shots</span>
+                  <input type="number" placeholder="enter forehand shots..." ng-model="data.forehand">
+              </label>
+              <label class="item item-input">
+                  <span class="input-label">Backhand Shots</span>
+                  <input type="number" placeholder="enter backhand shots..." ng-model="data.backhand">
+              </label>
+          </ion-list>
+          <button class="button button-stable button-block" ng-click="saveData()">Done</button>
+      </form>
+    </ion-content>
+</ion-view>
